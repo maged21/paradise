@@ -14,22 +14,27 @@
 </head>
 <body>
   <!-- -------------------header------------------------- -->
-<header class="row container">
-  <a href="#" class="logo row">
-    <img src="images/logo3.png" alt="">
+<header>
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <a href="#" class="logo">
+    <img src="images/logo2.png" alt="">
   </a>
-  <div class="toggleMenu" onclick="toggleMenu();"></div>
-  <nav class="navigation row">
-    <ul class="row">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Our Team</a></li>
+  <!-- <div class="toggleMenu" onclick="toggleMenu();"></div> -->
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#service">Services</a></li>
+      <li><a href="team.html">Team</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-  </nav>
 </header>
+
+<div class="wrapper">
+
 <!-- ---------------------hero--------------------------- -->
 <section class="hero row container">
   <div>
@@ -116,7 +121,7 @@
         <div class="card">
           <div class="content">
             <div class="imgBx">
-              <img src="images/services/vr.jpg">
+              <img src="images/services/vr2.jpg">
             </div>
             <div class="contentBx">
               <h3>VR</h3>
@@ -134,7 +139,7 @@
         <div class="card">
           <div class="content">
             <div class="imgBx">
-              <img src="images/services/ar2.jpg">
+              <img src="images/services/ar21.jpg">
             </div>
             <div class="contentBx">
               <h3>AR</h3>
@@ -191,7 +196,7 @@
             <div class = "prod-container">
                 <div class = card>
                   <div class = image>
-                    <img src = "images/services/p1.jpg">
+                    <img src = "images/services/p12.jpg">
                   </div>
                   <div class = content>
                     <h3>ONE AR Mall</h3>
@@ -202,14 +207,14 @@
                       style that they might be interested in purchasing. Next, they
                       select one of types featured in the application so they can “try
                       on" the product from anywhere on a device, and 
-                      they can buy it online. 1
+                      they buy it online. 1
                       st
                       . Sale is Avenue22 Mall.</p>
                   </div>
                 </div>    
                 <div class = card>
                     <div class = image>
-                      <img src = "images/services/p2.jpg">
+                      <img src = "images/services/p23.jpg">
                     </div>
                     <div class = content>
                       <h3>ONE Enterprise Resource Planning (ERP)</h3>
@@ -238,61 +243,62 @@
               </div>
         </div>
     </section>
-    <!-- -------------------services---------------------- -->
-    <section id="services">
+
+
+    <!-- -------------------services--------------------- -->
+    <section id="service">
       <div class="s-title">
         <h1>Services</h1>
       </div>
-      <div class="service">
-        <div class="left">
-          <img src="images/services/img1.jpg">
+      <div class="service-box">
+        <div class="service-img">
+        <img src="images/services/img1.jpg">
         </div>
-        <div class="right">
-          <div class="s-content">
-            <h1>Software Development</h1>
-            <p>Paradise Solutions has a very qualified, experienced
-              software developers those have many certificates and
-              experience in different platforms.
-              They deliver fast with excellent functionality and best
-              quality.</p>
-          </div>
+        <div class="service-box2">
+        <h1>Software Development</h1>
+        <p>Paradise Solutions has a very qualified, experienced
+          software developers those have many certificates and
+          experience in different platforms.
+          They deliver fast with excellent functionality and best
+          quality.</p>           
         </div>
       </div>
-      <div class="service">
-        <div class="right">
-          <div class="s-content">
-            <h1>Projects Implementation</h1>
-            <p>Our team put a project plan into action to produce the
-              deliverables, known as the products or services, for
-              clients or stakeholders. It takes place after the planning
-              phase, during which a team determines the key objectives
-              for the project, as well as the timeline and budget.</p>
-          </div>
+      <div class="service-box right-side">
+        <div class="service-img">
+        <img src="images/services/s2.jpg">
         </div>
-        <div class="left">
-          <img src="images/services/s2.jpg">
+        <div class="service-box2">
+          <h1>Projects Implementation</h1>
+          <p>Our team put a project plan into action to produce the
+            deliverables, known as the products or services, for
+            clients or stakeholders. It takes place after the planning
+            phase, during which a team determines the key objectives
+            for the project, as well as the timeline and budget.</p>        
         </div>
       </div>
-      <div class="service">
-        <div class="left">
-          <img src="images/services/s3.jpg">
+      <div class="service-box">
+        <div class="service-img">
+        <img src="images/services/s3.jpg">
         </div>
-        <div class="right">
-          <div class="s-content">
-            <h1>Digital Transformation</h1>
-            <p>
-              We are changing the way business gets done and, in some
-              cases, creating entirely new classes of businesses. With
-              digital transformation, our clients are taking a step back
-              and revisiting everything they do, from internal systems
-              to their clients interactions both online and in person.</p>
-          </div>
+        <div class="service-box2">
+          <h1>Digital Transformation</h1>
+          <p>
+            We are changing the way business gets done and, in some
+            cases, creating entirely new classes of businesses. With
+            digital transformation, our clients are taking a step back
+            and revisiting everything they do, from internal systems
+            to their clients interactions both online and in person.</p>         
         </div>
       </div>
     </section>
+
         <!-- -------------------technologies--------------------- -->
-    <!-- <section id="technologies">
-      <div class="fe-box">
+        <div class="t-title">
+          <h1>Technologies</h1>
+        </div>
+    <section id="technologies">
+
+      <div class="fe-box box1">
         <img src="images/platform/T1.png">
         <h6>Microsoft Windows</h6>
     </div>
@@ -316,8 +322,31 @@
         <img src="images/platform/T65.png">
         <h6>IOS</h6>
     </div>
-    </section> -->
-
+    </section>
+    <!-- ----------------------footer--------------------------- -->
+    <section id="footer">
+      <div class="fo-container">
+        <div class="foot about">
+          <h2>About Us</h2>
+          <p>Paradise Solutions team members were always here to serve our progress
+          with an innovative vision
+          </p>
+          <ul class="ficons">
+            <li><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-at"></i></a></li>
+          </ul>
+        </div>
+        <div class="foot info">
+          <h2>Info</h2>
+          <ul>
+            <li><i class="fa-solid fa-location-dot"></i>Location : 133 Al Shawaifat St. New Cairo – Cairo - Egypt</li>
+            <li><i class="fa-solid fa-envelope"></i>Contact Info : info@paradise-solutions.com</li>
+            <li><i class="fa-solid fa-calendar-days"></i>Established: 1994</li>
+          </ul>
+        </div>
+      </div>  
+    </section>
     <!-- -------------------script------------------------ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
@@ -339,7 +368,7 @@
          opacity: 1,
          duration: 1000,
          easing: 'easeInSine',
-         delay: anime.stagger(70, {start: 3000})
+         delay: anime.stagger(70, {start: 1000})
        })
        // companyname - fade in
        anime({
@@ -347,7 +376,7 @@
          opacity: 1,
          duration: 2000,
          easing: 'easeInSine',
-         delay: anime.stagger(100, {start: 6500})
+         delay: anime.stagger(100, {start: 3500})
        })
        // companyname 2nd animation up and down letters
        // logo
@@ -368,17 +397,19 @@
        anime({
          targets: '.small-intro span',
          opacity: 1,
-         duration: 1000,
+         up: '240px',
+         duration: 500,
          easing: 'easeInSine',
-         delay: anime.stagger(150, {start: 8200})
+         delay: anime.stagger(150, {start: 2200})
        })
       });
     </script>
     <script src="script.js"></script>
-    <script src="js/aos.js"></script>
+    <script src="aos.js"></script>
 <script>
    AOS.init();
  </script>
 
+</div>
 </body>
 </html>
