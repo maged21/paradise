@@ -20,7 +20,7 @@ body{
     color: var(--light-text);
     font-family: 'Fira Sans', sans-serif;
     background: rgb(241, 239, 234);
-    background-image: url("Images/confetti-doodles.png");
+    background-image: url("images/confetti-doodles.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
