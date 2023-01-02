@@ -48,7 +48,7 @@ html{
 .logo,
 .navigation li,
 .small-intro span{
-  opacity: 0;
+  opacity: 1;
 }
 
 /* ---------------------------header---------------------------- */
