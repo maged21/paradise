@@ -1,10 +1,21 @@
-function toggleMenu() {
-  const toggleMenu = document.querySelector(".toggleMenu");
-  const navigation = document.querySelector(".navigation");
-  toggleMenu.classList.toggle("active");
-  navigation.classList.toggle("active");
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+
+menu.onclick = () => {
+  menu.classList.toggle('bx');
+  navbar.classList.toggle('open');
 }
 
+//stop propagation on the side nav element
+// menu.onclick = function(e) {
+//   e.stopPropagation()
+// }
+
+// //close menu when document is clicked
+// document.onclick = function() {
+//   menu.classList.remove('open');
+// }
 
 var swiper = new Swiper(".slide-content", {
   slidesPerView: 3,
