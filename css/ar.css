@@ -667,7 +667,7 @@ header{
         top: 100%;
         left: -100%;
         width: 173px;
-        height: 40vh;
+        height: 35vh;
         background: var(--solitude-bg);
         background-size: contain;
         display: flex;
@@ -679,7 +679,7 @@ header{
 
     .navbar a{
         display: block;
-        margin: 10px 0;
+        margin: 12px 0;
         padding: 0px 25px;
         color: var(--main-text);
     }
