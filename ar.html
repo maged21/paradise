@@ -16,7 +16,7 @@
   <a href="ar.html" class="logo">
     <img src="images/logo2.png">
   </a>
-    <ul class="navbar">
+    <ul class="navbar" id="navid">
       <li><a href="#about">من نحن</a></li>
       <li><a href="#products">المنتجات</a></li>
       <li><a href="#service">الخدمات</a></li>
@@ -46,6 +46,8 @@
   </div>
 </section>
 </div>
+
+<div id="bodyid">
     <!-- -------------------about------------------------- -->
     <section id="about">
         <div class="title">
@@ -305,12 +307,19 @@
         </div>
       </div>  
     </section>
+
+</div>
     <!-- -------------------script------------------------ -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script>
       $(document).ready(function(){
+
+        $('#bodyid').click(function(){
+          $('#navid').removeClass("open");
+         });
+
         $(".name, .company, .small-intro").lettering();
         // agency
         anime({
@@ -363,10 +372,7 @@
       });
     </script>
     <script src="script.js"></script>
-    <script src="aos.js"></script>
-<script>
-   AOS.init();
- </script>
+
 
 </body>
 </html>

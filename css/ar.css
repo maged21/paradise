@@ -27,11 +27,11 @@ body{
 
 @font-face {
     font-family: myFirstFont;
-    src: url(Geeza-Pro-Regular.ttf);
+    src: url(Geeza-Pro-Regular.ttf);    
 }
   
 .hero h3,p {
-    font-family: myFirstFont;
+    font-family: myFirstFont !important;
 }
 
 body::-webkit-scrollbar {
@@ -667,7 +667,7 @@ header{
         top: 100%;
         left: -100%;
         width: 173px;
-        height: 41vh;
+        height: 40vh;
         background: var(--solitude-bg);
         background-size: contain;
         display: flex;
@@ -701,7 +701,6 @@ header{
     }
     /* --------technologies--- */
     #technologies{
-        margin-right: 45px;
         gap: 50px;
     }
     .box1{
@@ -740,7 +739,7 @@ header{
         margin-bottom: 80px;
     }
     .prod-container{
-      gap:  50px;
+      gap:  70px;
       margin-top: 50px;
     }
     .service-box img {
@@ -758,4 +757,8 @@ header{
   #about,#products,#service{
       padding-top: 90px;
   }
+
+  #technologies{
+    justify-content: center;
+}
 }
