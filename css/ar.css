@@ -25,6 +25,14 @@ body{
     direction: rtl;
 }
 
+@font-face {
+    font-family: myFirstFont;
+    src: url(Geeza-Pro-Regular.ttf);
+}
+  
+.hero h3,p {
+    font-family: myFirstFont;
+}
 
 body::-webkit-scrollbar {
     width: 4px;
