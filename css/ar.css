@@ -659,7 +659,7 @@ header{
         top: 100%;
         left: -100%;
         width: 173px;
-        height: 31vh;
+        height: 41vh;
         background: var(--solitude-bg);
         background-size: contain;
         display: flex;
@@ -723,7 +723,13 @@ header{
         width: 100%;
       }
     .hero{
-      min-height: calc(111vh - 93.6px);
+      min-height: calc(151vh - 293.6px);
+    }
+    .row img{
+        margin-bottom: -250px;
+    }
+    .hero h1{
+        margin-bottom: 80px;
     }
     .prod-container{
       gap:  50px;
