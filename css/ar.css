@@ -25,14 +25,14 @@ body{
     direction: rtl;
 }
 
-@font-face {
+/* @font-face {
     font-family: myFirstFont;
     src: url(Geeza-Pro-Regular.ttf);    
 }
   
 .hero h3,p {
     font-family: myFirstFont !important;
-}
+} */
 
 body::-webkit-scrollbar {
     width: 4px;
@@ -187,7 +187,7 @@ header{
     color: #FFC400;
 }
 .hero h3{
-    font-size: 52px;
+    font-size: 42px;
     margin-bottom: 20px;
     line-height: 80px;
     color: #0E6FFF;
