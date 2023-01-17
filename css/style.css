@@ -9,14 +9,13 @@
 }
 :root{
     --bg:#f1efea;
-    --main-text:#004ba8;
-    --blue: #0E6FFF;
+    --main-text:#000;
+    --card:#e5eeff;
     --light-text:#0052C0;
     --blue-bg:#345aa4;
     --white-text:#fff;
     --orange:#ffa500;
-    --darker-orange:#ff4500;
-    --solitude-bg:#E5EEFF;
+    --second-bg:#0a122a;
 }
 /* ----------body----------------- */
 body{
@@ -51,7 +50,7 @@ html{
 
 /* ---------------------------header---------------------------- */
 .header{
-    background: linear-gradient(180deg, #0E6FFF -28.35%, rgba(63, 0, 156, 0) 153.96%);
+    background: var(--second-bg);
 }
 
 header{
@@ -63,16 +62,21 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(180deg, #0E6FFF -8.35%, rgba(63, 0, 156, 0) 193.96%);
-    padding: 4px 4%;
+    background: #0a122a;
+    padding: 15px 4%;
     transition: all .50s ease;
-    border-radius: 0px 0px 50px 50px;
 }
 
 
 .logo{
     display: flex;
-    align-items: center;
+    align-items: center; 
+}
+
+.logo h1{
+    color: #FFC400;
+    /* color: #A0ECD0; */
+    /* margin-top: px; */
 }
 
 .logo img{
@@ -154,14 +158,15 @@ header{
 /* ---------------------------hero------------------------------ */
 .row{
     display: flex;
-    margin-right: 12px;
+    justify-content: center;
 }
 .row img{
-    max-width: 100%;
+    max-width: 80%;
     object-fit: cover;
 }
 .container{
     max-width: 100%;
+    background: var(--second-bg);
 }
 .hero{
     flex-wrap: wrap-reverse;
@@ -177,15 +182,16 @@ header{
     text-transform: capitalize;
 }
 .hero h1{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-weight: bold;
     font-size: 35px;
     color: #FFC400;
 }
 .hero h3{
-    font-size: 43px;
-    line-height: 80px;
-    color: #0E6FFF;
+    font-size: 59px;
+    line-height: 60px;
+    color: var(--white-text);
+    margin-bottom: 20px;
 }
 .hero p{
     font-size: 22px;
@@ -205,13 +211,14 @@ header{
 
 #about .title h1{
     font-size: 55px;
-    color: var(--blue);
+    color: var(--orange);
 }
 
 #about .about-text p{
     line-height: 35px;
     font-size: 20px;
     text-transform: capitalize;
+    color: var(--main-text);
 }
 .about-grid{
     display: flex;
@@ -225,19 +232,18 @@ header{
     padding: 40px 12px;
     width: calc(28% - 22px);
     margin-top: 50px;
-    background: #E5EEFF;
+    background: var(--second-bg);
     position: relative;
     transition: 0.5s;
 }
 
 .grid-text i{
     font-size: 30px;
-    color: var(--main-text);
-    margin: 10px 0;
+    color: var(--orange);
+    margin-bottom: 8px;
     padding: 20px;
-    background: var(--white-text);
     border-radius: 50px;
-    transition: 0.5s;
+    transition: 0.7s;
 }
 
 .grid:after{
@@ -253,23 +259,25 @@ header{
 }
 .grid:hover::after{
     transform: rotate(13deg);
-    background: var(--blue);
+    background: var(--orange);
 }
 .grid:hover i{
-    background: var(--blue);
-    color: var(--white-text);
+    background: var(--orange);
+    color: var(--second-bg);
 }
+
 
 .grid-text p{
     font-size: 15px;
+    color: var(--white-text);
 }
 .grid .grid-text h2{
     margin-bottom: 10px;
-    color: var(--main-text);
+    color: var(--orange);
 }
 
 /* -----------------------technologies---------------------------- */
-#technologies{
+/* #technologies{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -288,36 +296,36 @@ header{
 .fe-box{
     border: 1px solid #7bb2d9;
     padding: 30px 18px;
-    box-shadow: 0 0 30px 0 var(--main-text);
+    transition: .5s;
 }
 .fe-box h6{
     margin-top: 20px;
-    font-weight: 500;
-    color: #fff;
+    font-weight: bold;
+    color: black;
 }
 .fe-box:nth-child(1) {
-    background-color: var(--main-text);
+    background-color: var(--light-text);
 }
 .fe-box:nth-child(2){
-    background-color: var(--orange);
+    background-color: var(--bg);
 }
 .fe-box:nth-child(3){
-    background-color: var(--main-text);
-}
-.fe-box:nth-child(4){
     background-color: var(--orange);
 }
+.fe-box:nth-child(4){
+    background-color: var(--light-text);
+}
 .fe-box:nth-child(5){
-    background-color: var(--main-text);
+    background-color: var(--bg);
 }
 .fe-box:nth-child(6){
     background-color: var(--orange);
 }
 .fe-box:hover{
     transform: scale(1.1);
-    transition: .8s;
-    box-shadow: 0 0 45px 0 #0095cc;
-}
+    transition: .5s;
+    box-shadow: 0 0 25px 0 var(--blue);
+} */
 /* -------------------------platforms------------------------------ */
 #platforms{
     display: flex;
@@ -327,10 +335,10 @@ header{
 	min-height: 100vh;
     text-align: center;
     background: var(--solitude-bg);
-    border-radius: 160px 160px 0 0;
+    border-radius: 60px 60px 0 0;
 }
 #platforms .p-title h1{
-    color: var(--blue);
+    color: var(--orange);
     margin-top: 33px;
     font-size: 55px;
 }
@@ -347,8 +355,8 @@ header{
 .pcontainer .card {
 	position: relative;
 	width: 275px;
-	height: 420px;
-    background: var(--light-text);
+	height: 340px;
+    background: var(--second-bg);
     background-size: cover;
 	margin: 15px;
 	border-radius: 15px;
@@ -380,7 +388,7 @@ header{
 .pcontainer .card .content .imgBx {
 	position: relative;
 	width: 190px;
-	height: 260px;
+	height: 240px;
 	overflow: hidden;
 }
 
@@ -446,7 +454,7 @@ header{
 #products h2{
     font-size: 55px;
     margin-bottom: 5px;
-    color: var(--blue);
+    color: var(--second-bg);
 }
   .prod-cards {
     display : flex;
@@ -470,13 +478,13 @@ header{
     position: relative;
     max-width : 300px;
     height : 200px;  
-    background: var(--light-text);
+    background: var(--second-bg);
     margin : 10px 10px;
     padding : 20px 15px;
     display : flex;
     flex-direction : column;
     box-shadow : 0 5px 20px rgba(0,0,0,0.5);
-    transition : 0.3s ease-in-out;
+    transition : 0.5s ease-in-out;
     border-radius : 15px;
     color:var(--white-text);
   }
@@ -522,8 +530,7 @@ header{
   
 /* ------------------------services------------------------- */
 #service{
-    background: var(--main-text);
-    border-radius: 60px 60px 0 0;
+    background: var(--second-bg);
 }
 #service .s-title{
     text-align: center; 
@@ -541,7 +548,7 @@ header{
     align-items: center;
     gap: 50px;
     flex-wrap: wrap;
-    margin-bottom: 80px;
+    margin-bottom: 30px;
 }
 .service-box>* {
     flex: 1 1 150px;
@@ -551,7 +558,7 @@ header{
     flex-direction: row-reverse;
 }
 .service-box img{
-    width: 700px;
+    width: 600px;
 }
 .service-box2 h1{
     margin-bottom: 30px;
@@ -559,8 +566,137 @@ header{
 }
 .service-box2 p{
     line-height: 32px;
-    font-size: 18px;
+    font-size: 19px;
     color: var(--bg);
+}
+
+/* ---------------------tech-------------------------------- */
+
+.technologies {
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.technologies .techcard {
+    position: relative;
+    border-radius: 10px;
+}
+
+.technologies .techcard .techicon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.7s;
+    z-index: 1;
+}
+
+.technologies .techcard:nth-child(1) .techicon {
+    background: #e07768;
+}
+
+.technologies .techcard:nth-child(2) .techicon {
+    background: #6eadd4;
+}
+
+.technologies .techcard:nth-child(3) .techicon {
+    background: #4aada9;
+}
+
+
+.technologies .techcard .techicon .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.techicon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: #fff;
+}
+
+.technologies .techcard .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.technologies .techcard .face.face1 {
+    position: relative;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.technologies .techcard:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0px);
+}
+
+.technologies .techcard .face.face1 .techcontent {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.technologies .techcard:hover .face.face1 .techcontent {
+    opacity: 1;
+}
+
+.technologies .techcard .face.face1 .techcontent i{
+    max-width: 100px;
+}
+
+.technologies .techcard .face.face2 {
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+    transform: translateY(-100px);
+}
+
+.technologies .techcard:hover .face.face2{
+    transform: translateY(0);
+}
+
+.technologies .techcard .face.face2 .techcontent p {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #414141;
+}
+
+.technologies .techcard .face.face2 .techcontent h3 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    color: #414141;
+} 
+
+.technologies a {
+    text-decoration: none;
+    color: #414141;
 }
 /* ---------------------footer------------------------------ */
 #footer{
@@ -568,7 +704,7 @@ header{
     width: 100%;
     height: auto;
     padding: 50px 100px;
-    background: var(--solitude-bg);
+    background: var(--second-bg);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -587,7 +723,7 @@ header{
 }
 #footer .fo-container h2{
     position: relative;
-    color: var(--main-text);
+    color: var(--white-text);
     margin-bottom: 20px;
 }
 #footer .fo-container  h2:before{
@@ -602,7 +738,7 @@ header{
 #footer .fo-container p{
     line-height: 25px;
     font-size: 16px;
-    color: var(--main-text);
+    color: var(--white-text);
 }
 #footer .ficons{
     margin-top: 13px;
@@ -622,10 +758,10 @@ header{
     transition: 0.5s;
 }
 #footer .ficons a{
-    color: var(--main-text);
+    color: var(--second-bg);
 }
 #footer .ficons li a:hover{
-    background-color: var(--main-text);
+    background-color: var(--second-bg);
     color: var(--orange);
     transform: scale(1.2);
 }
@@ -635,10 +771,11 @@ header{
 }
 #footer .info ul li{
     margin-bottom: 8px;
-    color: var(--main-text);
+    color: var(--white-text);
 }
 #footer .info ul li i{
     margin-right: 5px;
+    color: var(--orange);
 }
 /* -------------------media--------------------------------- */
 @media screen and (max-width: 1280px) {
