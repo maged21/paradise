@@ -25,7 +25,7 @@ body{
 
 
 body::-webkit-scrollbar {
-    width: 4px;
+    width: 1px;
 }
 
 body::-webkit-scrollbar-track {
@@ -276,56 +276,8 @@ header{
     color: var(--orange);
 }
 
-/* -----------------------technologies---------------------------- */
-/* #technologies{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 90px;
-    margin: 70px 90px;
-    align-items: center;
-    text-align: center;
-    flex-wrap: wrap;
-}
- .t-title h1{
-    text-align: center;
-    font-size: 52px;
-    margin-bottom: 100px;
-    color: var(--blue);
-}
-.fe-box{
-    border: 1px solid #7bb2d9;
-    padding: 30px 18px;
-    transition: .5s;
-}
-.fe-box h6{
-    margin-top: 20px;
-    font-weight: bold;
-    color: black;
-}
-.fe-box:nth-child(1) {
-    background-color: var(--light-text);
-}
-.fe-box:nth-child(2){
-    background-color: var(--bg);
-}
-.fe-box:nth-child(3){
-    background-color: var(--orange);
-}
-.fe-box:nth-child(4){
-    background-color: var(--light-text);
-}
-.fe-box:nth-child(5){
-    background-color: var(--bg);
-}
-.fe-box:nth-child(6){
-    background-color: var(--orange);
-}
-.fe-box:hover{
-    transform: scale(1.1);
-    transition: .5s;
-    box-shadow: 0 0 25px 0 var(--blue);
-} */
+
+
 /* -------------------------platforms------------------------------ */
 #platforms{
     display: flex;
@@ -539,7 +491,7 @@ header{
 }
 #service .s-title h1{
     font-size: 52px;
-    color: var(--bg);
+    color: var(--orange);
 }
 .service-box{
     display: flex;
@@ -571,12 +523,23 @@ header{
 }
 
 /* ---------------------tech-------------------------------- */
-
+.t-title h1{
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 10px;
+    color: var(--orange);
+}
+#tech{
+    display: flex;
+    justify-content: center;
+}
 .technologies {
     width: 1000px;
     position: relative;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    z-index: 0;
 }
 
 .technologies .techcard {
@@ -596,7 +559,7 @@ header{
 }
 
 .technologies .techcard:nth-child(1) .techicon {
-    background: #e07768;
+    background: var(--second-bg);
 }
 
 .technologies .techcard:nth-child(2) .techicon {
@@ -604,19 +567,20 @@ header{
 }
 
 .technologies .techcard:nth-child(3) .techicon {
-    background: #4aada9;
+    background: var(--second-bg);
+}
+.technologies .techcard:nth-child(4) .techicon {
+    background: var(--second-bg);
+}
+.technologies .techcard:nth-child(5) .techicon {
+    background: #6eadd4;
+} 
+.technologies .techcard:nth-child(6) .techicon {
+    background: var(--second-bg);
 }
 
 
-.technologies .techcard .techicon .fa {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    transition: 0.7s;
-    color: #fff;
-}
+
 
 .techicon i {
     position: absolute;
@@ -625,7 +589,17 @@ header{
     transform: translate(-50%, -50%);
     font-size: 80px;
     transition: 0.7s;
-    color: #fff;
+    color: var(--orange);
+}
+
+.techicon img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    transition: 0.7s;
+    color: var(--orange);
 }
 
 .technologies .techcard .face {
@@ -799,7 +773,7 @@ header{
         right: -100%;
         width: 173px;
         height: 35vh;
-        background: var(--solitude-bg);
+        background: var(--second-bg);
         background-size: contain;
         display: flex;
         flex-direction: column;
@@ -812,7 +786,7 @@ header{
         display: block;
         margin: 12px 0;
         padding: 0px 25px;
-        color: var(--main-text);
+        color: var(--white-text);
     }
 
     .navbar a:hover{
@@ -827,7 +801,6 @@ header{
         /* --------header--------- */
         .hero h3 {
             font-size: 32px;
-            color: #0E6FFF;
             margin-top: -90px;
             line-height: 50px;
         }
@@ -889,7 +862,7 @@ header{
     #about,#products,#service{
         padding-top: 90px;
     }
-    #technologies{
+    #tech{
         justify-content: center;
     }
 }
