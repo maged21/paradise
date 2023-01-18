@@ -75,8 +75,6 @@ header{
 
 .logo h1{
     color: #FFC400;
-    /* color: #A0ECD0; */
-    /* margin-top: px; */
 }
 
 .logo img{
@@ -135,9 +133,12 @@ header{
     font-size: 18px;
     font-weight: 500;
     transition: all .50s ease;
+    padding: 8px 10px;
+    background: var(--orange);
 }
 .main a:hover{
     color: var(--orange);
+    background: var(--second-bg);
 }
 
 .user i{
@@ -406,7 +407,7 @@ header{
 #products h2{
     font-size: 55px;
     margin-bottom: 5px;
-    color: var(--second-bg);
+    color: var(--orange);
 }
   .prod-cards {
     display : flex;
@@ -553,7 +554,7 @@ header{
     left: 0;
     width: 100%;
     height: 100%;
-    background: #f00;
+    background: var(--orange);
     transition: 0.7s;
     z-index: 1;
 }
@@ -563,7 +564,7 @@ header{
 }
 
 .technologies .techcard:nth-child(2) .techicon {
-    background: #6eadd4;
+    /* background: #6eadd4; */
 }
 
 .technologies .techcard:nth-child(3) .techicon {
@@ -573,7 +574,7 @@ header{
     background: var(--second-bg);
 }
 .technologies .techcard:nth-child(5) .techicon {
-    background: #6eadd4;
+    /* background: var(--second-bg); */
 } 
 .technologies .techcard:nth-child(6) .techicon {
     background: var(--second-bg);
@@ -842,6 +843,10 @@ header{
       .row img{
         margin-bottom: -250px;
     }
+    #about .about-text p{
+        width: 145%;
+        margin-left: -50px;
+    }
 
       .prod-container{
         gap:  70px;
@@ -862,7 +867,7 @@ header{
     #about,#products,#service{
         padding-top: 90px;
     }
-    #tech{
+    .technologies{
         justify-content: center;
     }
 }

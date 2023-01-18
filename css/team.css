@@ -9,20 +9,18 @@
 }
 :root{
     --bg:#f1efea;
-    --main-text:#004ba8;
-    --blue: #0E6FFF;
+    --main-text:#000;
+    --card:#e5eeff;
     --light-text:#0052C0;
     --blue-bg:#345aa4;
     --white-text:#fff;
     --orange:#ffa500;
-    --darker-orange:#ff4500;
-    --solitude-bg:#E5EEFF;
+    --second-bg:#0a122a;
 }
 /* ----------body----------------- */
 body{
     color: var(--light-text);
     font-family: 'Fira Sans', sans-serif;
-    background: linear-gradient(180deg, #0E6FFF -28.35%, rgba(63, 0, 156, 0) 153.96%);
 }
 
 
@@ -52,8 +50,8 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(180deg, #0E6FFF -28.35%, rgba(63, 0, 156, 0) 153.96%);
-    padding: 4px 4%;
+    background: var(--second-bg);
+    padding: 15px 2%;
     transition: all .50s ease;
 }
 
@@ -64,6 +62,10 @@ header{
 
 .logo img{
     width: 70px;
+}
+
+.logo h1{
+    color: #FFC400;
 }
 
 .navbar{
@@ -112,13 +114,16 @@ header{
 .main a{
     margin-right: 25px;
     margin-left: 30px;
-    color: var(--white-text);
+    color: var(--second-bg);
     font-size: 18px;
     font-weight: 500;
     transition: all .50s ease;
+    padding: 8px 10px;
+    background: var(--orange);
 }
 .main a:hover{
     color: var(--orange);
+    background: var(--second-bg);
 }
 
 .user i{
@@ -269,7 +274,7 @@ header{
     width: 100%;
     height: auto;
     padding: 50px 100px;
-    background: whitesmoke;
+    background: var(--second-bg);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -288,7 +293,7 @@ header{
 }
 #footer .fo-container h2{
     position: relative;
-    color: var(--main-text);
+    color: var(--white-text);
     margin-bottom: 20px;
 }
 #footer .fo-container  h2:before{
@@ -303,6 +308,7 @@ header{
 #footer .fo-container p{
     line-height: 25px;
     font-size: 16px;
+    color: var(--white-text);
 }
 #footer .ficons{
     margin-top: 13px;
@@ -322,10 +328,10 @@ header{
     transition: 0.5s;
 }
 #footer .ficons a{
-    color: var(--main-text);
+    color: var(--second-bg);
 }
 #footer .ficons li a:hover{
-    background-color: var(--main-text);
+    background-color: var(--second-bg);
     color: var(--orange);
     transform: scale(1.2);
 }
@@ -335,11 +341,12 @@ header{
 }
 #footer .info ul li{
     margin-bottom: 8px;
+    color: var(--white-text);
 }
 #footer .info ul li i{
     margin-right: 5px;
+    color: var(--orange);
 }
-
 /* -------------media-------------------------- */
 @media screen and (max-width: 1280px) {
     header{
@@ -361,7 +368,7 @@ header{
         right: -100%;
         width: 173px;
         height: 47vh;
-        background: var(--solitude-bg);
+        background: var(--second-bg);
         background-size: contain;
         display: flex;
         flex-direction: column;
