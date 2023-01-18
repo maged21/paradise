@@ -49,9 +49,7 @@ html{
 }
 
 /* ---------------------------header---------------------------- */
-.header{
-    background: var(--second-bg);
-}
+
 
 header{
     position: fixed;
@@ -779,7 +777,7 @@ header{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        border-radius: 10px;
+        border-radius: 0px 0px 10px 0px;
         transition: all .60s ease;
     }
 
@@ -795,7 +793,7 @@ header{
     }
 
     .navbar.open{
-        right: 2%;
+        right: 0;
     }
 
     .logo h1 {
