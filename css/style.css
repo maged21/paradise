@@ -527,12 +527,12 @@ header{
 .t-title h1{
     text-align: center;
     font-size: 52px;
-    margin-bottom: 10px;
     color: var(--orange);
 }
 #tech{
     display: flex;
     justify-content: center;
+    padding-top: 50px;
 }
 .technologies {
     width: 1000px;
@@ -845,7 +845,7 @@ header{
     }
     #about .about-text p{
         width: 145%;
-        margin-left: -50px;
+        margin-left: -52px;
     }
 
       .prod-container{
