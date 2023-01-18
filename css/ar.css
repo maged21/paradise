@@ -790,6 +790,9 @@ header{
     .navbar.open{
         left: 2%;
     }
+    .logo h1 {
+        font-size: 20px;
+    }
 }
 @media screen and (max-width:900px) {
         /* --------header--------- */
@@ -839,7 +842,7 @@ header{
 
     #about .about-text p{
         width: 145%;
-        margin-right: -52px;
+        margin-right: -54px;
     }
 
       .prod-container{
