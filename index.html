@@ -21,6 +21,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#products">Products</a></li>
       <li><a href="#service">Services</a></li>
+      <li><a href="#platforms">Platform</a></li>
       <li><a href="#tech">Technologies</a></li>
       <!-- <li><a href="team.html">Team</a></li> -->
       <li><a href="#footer">Info</a></li>
@@ -87,10 +88,12 @@
     </section>
 
     <!-- -------------------platforms-------------------- -->
+    <div class="p-title">
+      <h1>Platforms</h1>
+  </div>
+
     <section id="platforms">
-      <div class="p-title">
-        <h1>Platforms</h1>
-    </div>
+
       <div class="pcontainer">
         <div class="card">
           <div class="content">
@@ -391,9 +394,8 @@
           <p>Team members from Paradise Solutions were always available to assist your progress with a unique perspective.
           </p>
           <ul class="ficons">
-            <li><a href="" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href="mailto:info@paradise-solutions.com"><i class="fa-solid fa-at"></i></a></li>
-            <li><a href=""><i class="fa-solid fa-location-pin"></i></a></li>
+            <li><a href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d62491.12671624372!2d31.41747667302828!3d30.021195328731274!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583ceedb204855%3A0x5f8c3abd1c4aa80c!2s3H%20Company%20Contracting%20%26%20Supplying!5e0!3m2!1sen!2seg!4v1674046584777!5m2!1sen!2seg"><i class="fa-solid fa-location-pin"></i></a></li>
           </ul>
         </div>
         <div class="foot info">
@@ -432,9 +434,9 @@
        anime({
          targets: '.company span',
          opacity: 1,
-         duration: 1000,
+         duration: 100,
          easing: 'easeInSine',
-         delay: anime.stagger(70, {start: 500})
+         delay: anime.stagger(70, {start: 300})
        })
        // companyname - fade in
        anime({
@@ -442,7 +444,7 @@
          opacity: 1,
          duration: 1000,
          easing: 'easeInSine',
-         delay: anime.stagger(100, {start: 600})
+         delay: anime.stagger(30, {start: 400})
        })
        // companyname 2nd animation up and down letters
        // logo
@@ -457,7 +459,7 @@
          targets: '.navbar li',
          opacity: 1,
          duration: 3000,
-         delay: anime.stagger(190, {start: 600})
+         delay: anime.stagger(190, {start: 400})
        })
        // intro
        anime({
@@ -466,7 +468,7 @@
          up: '240px',
          duration: 100,
          easing: 'easeInSine',
-         delay: anime.stagger(90, {start: 600})
+         delay: anime.stagger(50, {start: 400})
        })
       });
     </script>

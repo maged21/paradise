@@ -283,15 +283,17 @@ header{
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	min-height: 100vh;
+	min-height: 20vh;
     text-align: center;
     background: var(--solitude-bg);
     border-radius: 60px 60px 0 0;
+    padding-top: 50px;
 }
-#platforms .p-title h1{
+.p-title h1{
     color: var(--orange);
     margin-top: 33px;
     font-size: 55px;
+    text-align: center;
 }
 .pcontainer {
 	position: relative;
